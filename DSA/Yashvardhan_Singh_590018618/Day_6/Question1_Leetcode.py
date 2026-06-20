@@ -16,3 +16,4 @@ class Solution:
             return prev1
 
         return max(helper(0, n - 2), helper(1, n - 1))
+    
