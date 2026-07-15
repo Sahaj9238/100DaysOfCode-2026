@@ -1,6 +1,5 @@
 package Day_4;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -10,6 +9,7 @@ class d4question1_leetcode{
         int n = sc.nextInt();          //this is the size of the input array
         int m = sc.nextInt();
         int[][]matrix = new int[m][n];
+        
         for (int i = 0; i <m; i++) {
             for(int j = 0; j<n;j++) 
             matrix[i][j] = sc.nextInt();}     //elements of that array
@@ -19,6 +19,8 @@ class d4question1_leetcode{
                 copy[i][j]=matrix[j][i];
             }
         }for(int []i:copy){for(int j:i){}
+        sc.close();
+
         System.out.println(Arrays.toString(i));}
         
     }
